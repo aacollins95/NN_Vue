@@ -7,8 +7,10 @@
   </head>
   <body>
     <div id="vue-app">
-      <h1>{{greet('afternoon')}}</h1>
-      <a href>
+      <h1>Data Binding</h1>
+      <a v-bind:href="website">The Net Ninja</a>
+      <input type="text" v-bind:value="job" />
+      <p v-html="websiteTag"></p>
     </div>
 
     <script src="src/main.js"></script>
